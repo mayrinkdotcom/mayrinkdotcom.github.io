@@ -1,0 +1,27 @@
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes revealBlock {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes enlargeBlock {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
