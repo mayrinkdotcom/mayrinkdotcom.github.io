@@ -14,10 +14,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    font-weight: 900;
-}
-
 a {
     text-decoration: none;
 }
@@ -26,19 +22,25 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 100vw;
+
+    width: 100%;
+    padding: 10px 30px;
+    background-color: var(--secondaryColor);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: var(--secondaryColor);
 }
 
 header .logo {
     max-width: 50px;
 }
 
-header nav ul {
+header .navbar-desktop{
+    display: none;
+}
+
+header .navbar-desktop ul {
     padding: 10px;
     border-radius: 20px;
     display: flex;
@@ -48,46 +50,53 @@ header nav ul {
     margin-right: 50px;
 }
 
-header nav ul li a {
+header .navbar-desktop ul li a {
     padding: 0 10px;
     color: var(--primaryColor);
 }
 
-section {
-    margin-bottom: 20px;
+section.section-title {
+    margin: 10px;
+}
+
+section.section-title h1 {
+    font-weight: 900;
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-style: ridge;
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
 }
 
 #intro {
     width: 100%;
-    margin-top: 73px;
-    padding: 10px 20px 0;
-    background-color: gainsboro;
-    background: url("../assets/THsknvO.jpg") center center no-repeat fixed;
+    margin-top: 72px;
+
+    background: url("../assets/bg-img.jpg") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: flex;
-    align-items: center;
 }
 
 #intro .banner {
-    width: 50%;
+    width: 100vw;
 }
 
 #intro .banner img {
-    max-width: 500px;
+    max-width: 100vw;
 }
 
 #intro .text-block {
     position: relative;
     overflow: hidden;
 
-    width: 50%;
+    width: 100%;
     height: 100%;
     
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
 }
 
 #intro .text-block::after {
@@ -105,13 +114,10 @@ section {
 #intro .text-block .text {
     color: gainsboro;
     font-size: 1.6rem;
+    text-align: center;
+    
     opacity: 0;
     padding: 10px 0;
-    
-    /*
-    flex-direction: column;
-    flex-wrap: wrap;
-    */
 
     animation: fadeInText 0s 1.1s both;
 }
@@ -133,4 +139,11 @@ section {
 #portfolio .portfolio-images img {
     padding: 0 10px;
     max-width: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
 }

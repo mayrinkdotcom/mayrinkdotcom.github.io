@@ -1,0 +1,71 @@
+
+/* Extra-Small (default) */
+@media screen and (max-width: 575px) {
+    #intro {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    #intro .text-block .text {
+        width: 100%;
+        padding: 20px 20px 0;
+    }
+
+    #intro .banner {
+        margin-top: 10px;
+    }
+
+}
+
+/* Small */
+@media screen and (min-width: 576px) {
+    #intro .banner {
+        width: 50%;
+    }
+    
+    #intro .banner img {
+        max-width: 500px;
+    }
+
+    #intro .text-block {
+        position: relative;
+        overflow: hidden;
+    
+        width: 50%;
+        height: 100%;
+        
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+}
+
+/* Medium */
+@media screen and (min-width: 768px) {
+    header .logo {
+        max-width: 75px;
+    }
+
+    header .navbar-desktop {
+        display: block;
+    }
+
+    header .navbar-mobile {
+        display: none;
+    }
+
+    #intro {
+        display: flex;
+        padding: 10px 20px 0;
+        margin-top: 98px;
+    }
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+    
+}
+/* Extra-Large */
+@media screen and (min-width: 1200px) {
+
+}

@@ -2,11 +2,12 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
     <title>Mayrink dot com</title>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/animation.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -19,7 +20,8 @@
       <a href="#"
         ><img class="logo" src="./assets/logo.png" alt="Logo Mayrink dot com"
       /></a>
-      <nav>
+      <span class="navbar-mobile"><a href="#"><i class="fas fa-bars fa-2x"></i></a></span>
+      <nav class="navbar-desktop disable">
         <ul>
           <li><a href="#quem-sou-eu">Quem sou eu</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
@@ -37,7 +39,7 @@
         <h3 class="text">Transformando ideias em soluções digitais</h3>
       </div>
     </section>
-    <section id="quem-sou-eu">
+    <section id="quem-sou-eu" class="section-title">
       <h1>Quem sou eu</h1>
       <img
         src="https://source.unsplash.com/random/150x150?q=a"
@@ -53,7 +55,7 @@
         temporibus voluptate asperiores modi placeat, qui in atque dolor!
       </p>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="section-title">
       <h1>Portfólio</h1>
       <p>Aqui está o meu Portfólio, lindamente preenchido e formatado</p>
       <div class="portfolio-images">
@@ -83,7 +85,7 @@
         />
       </div>
     </section>
-    <section id="contatos">
+    <section id="contatos" class="section-title">
       <h1>Contatos</h1>
       <p>Aqui ficarão os links para minhas redes sociais</p>
       <ul>
@@ -94,8 +96,12 @@
       </ul>
     </section>
     <footer>
-      <p>Mayrink dot com ™©®℗ 2021</p>
-      <p>Todos os direitos reservados</p>
+      <p>Mayrink dot com © 2021 | Todos os direitos reservados</p>
     </footer>
   </body>
+
+  <script
+      src="https://kit.fontawesome.com/64f8fb50f9.js"
+      crossorigin="anonymous"
+    ></script>
 </html>
