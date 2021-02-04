@@ -55,16 +55,25 @@ header .navbar-desktop ul li a {
     color: var(--primaryColor);
 }
 
+header .navbar-mobile {
+    padding: 10px 15px;
+    background-color: var(--highlightColor);
+    border-radius: 20px;
+}
+
+header .navbar-mobile i {
+    color: var(--primaryColor);
+}
+
 section.section-title {
     margin: 10px;
+    text-align: center;
 }
 
 section.section-title h1 {
     font-weight: 900;
-    width: fit-content;
     padding: 10px;
     margin-bottom: 10px;
-    border-style: ridge;
     color: var(--secondaryColor);
     background-color: var(--primaryColor);
 }
