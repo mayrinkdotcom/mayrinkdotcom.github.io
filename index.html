@@ -1,79 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Mayrink dot com</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
-  <title>Mayrink dot com</title>
-  <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/animation.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <a href="#"
+        ><img class="logo" src="./assets/logo.png" alt="Logo Mayrink dot com"
+      /></a>
+      <span class="navbar-mobile"
+        ><a href="#"><i class="fas fa-bars fa-2x"></i></a
+      ></span>
+      <nav class="navbar-desktop disable">
+        <ul>
+          <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="intro">
+      <div class="banner">
+        <img src="./assets/intro.svg" alt="Foto" />
+      </div>
+      <div class="text-block">
+        <h1 class="text">MAYRINK DOT COM</h1>
+        <h3 class="text"><i>The best experience with the digital world</i></h3>
+        <h3 class="text">Transformando ideias em soluções digitais</h3>
+      </div>
+    </section>
+    <section id="quem-sou-eu">
+      <h1 class="section-title">Quem sou eu</h1>
+      <div class="section-content">
+        <img class="me-img" src="./assets/me.png" alt="placeholder" />
+        <p>
+          Graduando em Engenharia de Software pela PUC Minas. Técnico em
+          Eletrônica pelo CEFET-MG. Imerso nas áreas ligadas ao desenvolvimento
+          de software, Data Science e aplicações de inteligência artificial.
+          Experiência no campo de Internet of Things (IoT), programação de
+          microcontroladores e desenvolvimento de equipamentos biomédicos.
+          Participação em eventos de inovação tecnológica como expositor de
+          projetos. Entusiasta no ramo científico de TI, sempre em busca de
+          desenvolvimento pessoal e colaborativo.
+        </p>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h1 class="section-title">Portfólio</h1>
+      <div class="section-content">
+        <p>Aqui está o meu Portfólio, lindamente preenchido e formatado</p>
+        <div class="portfolio-images">
+          <img
+            src="https://source.unsplash.com/random/200x200?q=a"
+            alt="placeholder"
+          />
+          <img
+            src="https://source.unsplash.com/random/200x200?q=bb"
+            alt="placeholder"
+          />
+          <img
+            src="https://source.unsplash.com/random/200x200?q=ccc"
+            alt="placeholder"
+          />
+          <img
+            src="https://source.unsplash.com/random/200x200?q=dddd"
+            alt="placeholder"
+          />
+          <img
+            src="https://source.unsplash.com/random/200x200?q=e"
+            alt="placeholder"
+          />
+          <img
+            src="https://source.unsplash.com/random/200x200?q=f"
+            alt="placeholder"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="contatos">
+      <h1 class="section-title">Contatos</h1>
+      <div class="section-content">
+        <p>Aqui ficarão os links para minhas redes sociais</p>
+        <ul>
+          <li>instagram</li>
+          <li>LinkedIn</li>
+          <li>GitHub</li>
+          <li>E-mail</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p>Mayrink dot com © 2021 | Todos os direitos reservados</p>
+    </footer>
 
-<body>
-  <header>
-    <a href="#"><img class="logo" src="./assets/logo.png" alt="Logo Mayrink dot com" /></a>
-    <span class="navbar-mobile"><a href="#"><i class="fas fa-bars fa-2x"></i></a></span>
-    <nav class="navbar-desktop disable">
-      <ul>
-        <li><a href="#quem-sou-eu">Quem sou eu</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="intro">
-    <div class="banner">
-      <img src="./assets/intro.svg" alt="Foto" />
-    </div>
-    <div class="text-block">
-      <h1 class="text">MAYRINK DOT COM</h1>
-      <h3 class="text"><i>The best experience with the digital world</i></h3>
-      <h3 class="text">Transformando ideias em soluções digitais</h3>
-    </div>
-  </section>
-  <section id="quem-sou-eu" class="section-title">
-    <h1>Quem sou eu</h1>
-    <img src="https://source.unsplash.com/random/150x150?q=a" alt="placeholder" />
-    <p>Graduando em Engenharia de Software pela PUC Minas. Técnico em Eletrônica pelo CEFET-MG. Imerso nas áreas ligadas
-      ao desenvolvimento de software, Data Science e aplicações de inteligência artificial. Experiência no campo de
-      Internet of Things (IoT), programação de microcontroladores e desenvolvimento de equipamentos biomédicos.
-      Participação em eventos de inovação tecnológica como expositor de projetos. Entusiasta no ramo científico de TI,
-      sempre em busca de desenvolvimento pessoal e colaborativo.
-    </p>
-  </section>
-  <section id="portfolio" class="section-title">
-    <h1>Portfólio</h1>
-    <p>Aqui está o meu Portfólio, lindamente preenchido e formatado</p>
-    <div class="portfolio-images">
-      <img src="https://source.unsplash.com/random/200x200?q=a" alt="placeholder" />
-      <img src="https://source.unsplash.com/random/200x200?q=bb" alt="placeholder" />
-      <img src="https://source.unsplash.com/random/200x200?q=ccc" alt="placeholder" />
-      <img src="https://source.unsplash.com/random/200x200?q=dddd" alt="placeholder" />
-      <img src="https://source.unsplash.com/random/200x200?q=e" alt="placeholder" />
-      <img src="https://source.unsplash.com/random/200x200?q=f" alt="placeholder" />
-    </div>
-  </section>
-  <section id="contatos" class="section-title">
-    <h1>Contatos</h1>
-    <p>Aqui ficarão os links para minhas redes sociais</p>
-    <ul>
-      <li>instagram</li>
-      <li>LinkedIn</li>
-      <li>GitHub</li>
-      <li>E-mail</li>
-    </ul>
-  </section>
-  <footer>
-    <p>Mayrink dot com © 2021 | Todos os direitos reservados</p>
-  </footer>
-</body>
-
-<script src="https://kit.fontawesome.com/64f8fb50f9.js" crossorigin="anonymous"></script>
-
+    <script
+      src="https://kit.fontawesome.com/64f8fb50f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -65,17 +65,17 @@ header .navbar-mobile i {
     color: var(--primaryColor);
 }
 
-section.section-title {
-    margin: 10px;
+section .section-title {
+    margin: 10px 0;
     text-align: center;
-}
-
-section.section-title h1 {
     font-weight: 900;
     padding: 10px;
-    margin-bottom: 10px;
     color: var(--secondaryColor);
     background-color: var(--primaryColor);
+}
+
+section .section-content {
+    padding: 10px;
 }
 
 #intro {
@@ -131,10 +131,20 @@ section.section-title h1 {
     animation: fadeInText 0s 1.1s both;
 }
 
+#quem-sou-eu {
+    width: 100vw;
+    text-align: center;
+}
+
+#quem-sou-eu .me-img {
+    max-width: 80vw;
+    border-radius: 200px;
+}
+
 #portfolio .portfolio-images {
     width: 100%;
     margin: 10px auto;
-    max-width: 75%;
+    max-width: 75vw;
     display: flex;
     flex-wrap: wrap;
     
