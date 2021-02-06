@@ -47,7 +47,6 @@ header .navbar-desktop ul {
     justify-content: space-between;
     list-style: none;
     background-color: var(--highlightColor);
-    margin-right: 50px;
 }
 
 header .navbar-desktop ul li a {
@@ -82,6 +81,10 @@ section .section-content {
     width: 100%;
     margin-top: 72px;
 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+
     background: url("../assets/bg-img.jpg") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -102,7 +105,7 @@ section .section-content {
     overflow: hidden;
 
     width: 100%;
-    height: 100%;
+    padding: 10px 0;
     
     display: flex;
     flex-wrap: wrap;
@@ -126,7 +129,9 @@ section .section-content {
     text-align: center;
     
     opacity: 0;
-    padding: 10px 0;
+
+    width: 100%;
+    padding: 20px 20px 0;
 
     animation: fadeInText 0s 1.1s both;
 }
@@ -137,7 +142,7 @@ section .section-content {
 }
 
 #quem-sou-eu .me-img {
-    max-width: 80vw;
+    max-width: 60vw;
     border-radius: 200px;
 }
 
