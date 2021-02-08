@@ -85,6 +85,10 @@
     #quem-sou-eu .section-content .me-img {
         margin-right: 40px;
     }
+
+    #skills .section-content img {
+        width: 60px;
+    }
     
 }
 /* Extra-Large */
