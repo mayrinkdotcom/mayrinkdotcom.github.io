@@ -2,6 +2,7 @@
     --primaryColor: #91ffcf;
     --secondaryColor: #03001c;
     --highlightColor: #080052;
+    --highlightColorHover: #001d7e;
 }
 
 * {
@@ -146,11 +147,31 @@ section .section-content {
 }
 
 #skills .section-content {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-#skills .section-content img {
+#skills .section-content .skill-item {
+    width: 100%;
+    padding: 20px;
+    
+    color: gainsboro;
+    background-color: var(--highlightColor);
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: all 200ms ease;
+}
+
+#skills .section-content .skill-item:hover {
+    background-color: var(--highlightColorHover);
+    padding: 15px;
+    cursor: pointer;
+}
+
+#skills .section-content .skill-item img {
     width: 60px;
 }
 

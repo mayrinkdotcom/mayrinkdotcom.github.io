@@ -17,6 +17,10 @@
     #intro .banner img {
         max-width: 90vw;
     }
+
+    #skills .section-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Medium */
@@ -68,6 +72,10 @@
     #quem-sou-eu .section-content .me-img {
         max-width: 30vw;
         margin-right: 20px;
+    }
+    
+    #skills .section-content img {
+        width: 80px;
     }
 }
 
