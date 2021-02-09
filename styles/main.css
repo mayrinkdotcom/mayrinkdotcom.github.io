@@ -137,13 +137,17 @@ section .section-content {
 }
 
 #quem-sou-eu {
-    width: 100vw;
     text-align: center;
 }
 
 #quem-sou-eu .me-img {
     max-width: 60vw;
     border-radius: 200px;
+}
+
+#skills .section-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 #skills .section-content img {
