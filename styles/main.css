@@ -146,6 +146,10 @@ section .section-content {
     border-radius: 200px;
 }
 
+#skills .section-content img {
+    width: 60px;
+}
+
 #portfolio .portfolio-images {
     width: 100%;
     margin: 10px auto;
