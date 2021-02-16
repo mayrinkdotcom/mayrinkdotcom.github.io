@@ -175,21 +175,27 @@ section .section-content {
     width: 60px;
 }
 
-#portfolio .portfolio-images {
+#portfolio .portfolio-content {
     width: 100%;
     margin: 10px auto;
-    max-width: 75vw;
+    max-width: 90vw;
     display: flex;
     flex-wrap: wrap;
     
-    padding: 20px;
+    padding: 30px;
     justify-content: center;
 
     background-color: var(--secondaryColor);
     border-radius: 20px;
 }
 
-#portfolio .portfolio-images img {
+#portfolio .portfolio-content .portfolio-card {
+    padding: 10px;
+    background-color: var(--primaryColor);
+    border-radius: 8px;
+}
+
+#portfolio .portfolio-content .portfolio-card img {
     padding: 0 10px;
     max-width: 200px;
 }
