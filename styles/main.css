@@ -194,6 +194,24 @@ section .section-content {
     max-width: 200px;
 }
 
+#contatos .contacts-list {
+    padding: 10px;
+    list-style: none;
+    color: var(--highlightColor);
+    display: flex;
+    justify-content: space-between;
+}
+
+#contatos .contacts-list li {
+    transform: scale(1);
+    transition: all 200ms ease;
+}
+
+#contatos .contacts-list li:hover {
+    transform: scale(1.5);
+    color: var(--highlightColorHover);
+}
+
 footer {
     text-align: center;
     padding: 20px;
