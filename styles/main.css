@@ -179,8 +179,8 @@ section .section-content {
     width: 100%;
     margin: 10px auto;
     max-width: 90vw;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     
     padding: 30px;
     justify-content: center;
@@ -193,11 +193,31 @@ section .section-content {
     padding: 10px;
     background-color: var(--primaryColor);
     border-radius: 8px;
+
+    text-align: center;
+
+    transform: scale(0.9);
+    opacity: 70%;
+    transition: all 200ms ease;
+}
+
+#portfolio .portfolio-content .portfolio-card:hover {
+    transform: scale(1);
+    opacity: 100%;
+    transition: all 200ms ease;
 }
 
 #portfolio .portfolio-content .portfolio-card img {
-    padding: 0 10px;
-    max-width: 200px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 
 #contatos .contacts-list {
