@@ -220,6 +220,22 @@ section .section-content {
     overflow: hidden;
 }
 
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-tags .tag {
+    width: fit-content;
+    padding: 5px 10px;
+
+    color: var(--primaryColor);
+    background-color: var(--highlightColorHover);
+    border-radius: 20px;
+
+    margin: 10px 5px 0;
+}
+
 #contatos .contacts-list {
     padding: 10px;
     list-style: none;
