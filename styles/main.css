@@ -65,6 +65,14 @@ header .navbar-mobile i {
     color: var(--primaryColor);
 }
 
+header .menu-mobile.disable {
+    display: none;
+}
+
+header .menu-mobile.enable {
+    display: block;
+}
+
 section .section-title {
     margin: 10px 0;
     text-align: center;

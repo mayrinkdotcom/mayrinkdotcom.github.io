@@ -18,7 +18,15 @@
 <body>
   <header>
     <a href="#"><img class="logo" src="./assets/logo.png" alt="Logo Mayrink dot com" /></a>
-    <span class="navbar-mobile"><a href="#"><i class="fas fa-bars fa-2x"></i></a></span>
+    <nav class="navbar-mobile" onclick="showMenuMobile()">
+      <i class="fas fa-bars fa-2x"></i>
+      <ul class="menu-mobile disable">
+        <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </ul>
+    </nav>
     <nav class="navbar-desktop disable">
       <ul>
         <li><a href="#quem-sou-eu">Quem sou eu</a></li>
@@ -197,6 +205,7 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/64f8fb50f9.js" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
