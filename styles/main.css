@@ -68,6 +68,14 @@ header .navbar-mobile i {
     color: var(--primaryColor);
 }
 
+header .menu-mobile {
+    color: var(--primaryColor);
+}
+
+header .menu-mobile a:visited {
+    color: var(--primaryColor);
+}
+
 header .menu-mobile.disable {
     display: none;
 }
