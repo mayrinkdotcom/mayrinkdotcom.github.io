@@ -62,6 +62,7 @@ header .navbar-mobile {
     padding: 10px 15px;
     background-color: var(--highlightColor);
     border-radius: 20px;
+    text-align: right;
 }
 
 header .navbar-mobile i {
@@ -72,6 +73,12 @@ header .menu-mobile {
     color: var(--primaryColor);
 }
 
+header .menu-mobile li {
+    padding: 5px;
+    border-radius: 20px;
+}
+
+header .menu-mobile a,
 header .menu-mobile a:visited {
     color: var(--primaryColor);
 }
@@ -163,6 +170,8 @@ section .section-content {
 #quem-sou-eu .me-img {
     max-width: 60vw;
     border-radius: 200px;
+
+    margin-bottom: 20px;
 }
 
 #skills .section-content {
