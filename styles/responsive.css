@@ -21,6 +21,10 @@
     #skills .section-content {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    #portfolio .portfolio-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Medium */
@@ -76,6 +80,10 @@
     
     #skills .section-content img {
         width: 80px;
+    }
+
+    #portfolio .portfolio-content {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
