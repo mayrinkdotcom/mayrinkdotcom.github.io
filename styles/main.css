@@ -272,6 +272,10 @@ section .section-content {
 }
 
 #contatos .contacts-list li {
+    background-color: var(--primaryColor);
+    padding: 10px;
+    border-radius: 20px;
+    
     transform: scale(1);
     transition: all 200ms ease;
 }
@@ -279,6 +283,10 @@ section .section-content {
 #contatos .contacts-list li:hover {
     transform: scale(1.5);
     color: var(--highlightColorHover);
+}
+
+#contatos .contacts-list li a {
+    color: var(--highlightColor);
 }
 
 footer {
