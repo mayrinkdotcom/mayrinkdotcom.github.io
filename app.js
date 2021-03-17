@@ -1,6 +1,5 @@
 function showMenuMobile() {
-    var elementClasses = document.querySelector(".menu-mobile").classList
-    console.log(elementClasses[1]);
+    var elementClasses = document.querySelector(".menu-mobile").classList;
 
     if (elementClasses.contains("disable")) {
         elementClasses.add('enable');
@@ -11,3 +10,17 @@ function showMenuMobile() {
     }
     return;
 }
+
+$(document).ready( () => {
+    $('header a').click(function(e){
+        e.preventDefault();
+        var sectionId = $(this).attr('href'),
+            targetTopOffset = $(sectionId).offset().top,
+            menuHeight = $('header').innerHeight();
+        console.log(menuHeight);
+        
+        $('html, body').animate({
+            scrollTop: targetTopOffset - menuHeight
+        }, 500);
+    })
+} )
