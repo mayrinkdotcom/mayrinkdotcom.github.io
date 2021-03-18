@@ -229,6 +229,8 @@ section .section-content {
 
 #modal-container .modal {
     max-width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
     margin: 0 10vw;
 }
 
@@ -257,9 +259,13 @@ section .section-content {
 #modal-container .modal .modal-content .modal-text {
     color: gainsboro;
     background-color: var(--secondaryColor);
-    padding: 10px 20px;
+    padding: 20px 30px;
     text-align: justify;
     border-radius: 0 0 8px 8px;
+}
+
+#modal-container .modal .modal-content .modal-text .card-tags {
+    margin-top: 15px;
 }
 
 #portfolio .portfolio-content {

@@ -106,8 +106,22 @@
         width: 60px;
     }
     
+    #modal-container .modal {
+        max-width: 80%;
+    }
+
+    #modal-container .modal .modal-content {
+        display: flex;
+    }
+
+    #modal-container .modal .modal-content .modal-text {
+        border-radius: 0 0 8px 0;
+    }
 }
 /* Extra-Large */
 @media screen and (min-width: 1200px) {
+    #modal-container .modal {
+        max-width: 65%;
+    }
     
 }
