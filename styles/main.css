@@ -230,7 +230,6 @@ section .section-content {
 #modal-container .modal {
     max-width: 100%;
     margin: 0 10vw;
-    border-radius: 10px;
 }
 
 #modal-container .modal .modal-title {
@@ -238,6 +237,7 @@ section .section-content {
     background-color: var(--secondaryColor);
     
     padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
 }
 
 #modal-container .modal .modal-content {
@@ -246,6 +246,7 @@ section .section-content {
     
     align-items: center;
     justify-content: center;
+    border-radius: 0 0 8px 8px;
 }
 
 #modal-container .modal .modal-content .modal-image {
@@ -258,6 +259,7 @@ section .section-content {
     background-color: var(--secondaryColor);
     padding: 10px 20px;
     text-align: justify;
+    border-radius: 0 0 8px 8px;
 }
 
 #portfolio .portfolio-content {
