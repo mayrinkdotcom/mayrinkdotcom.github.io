@@ -1,213 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <title>Mayrink dot com</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
-  <title>Mayrink dot com</title>
-  <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/animation.css" />
-  <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <header>
+      <a href="#intro"
+        ><img class="logo" src="./assets/logo.png" alt="Logo Mayrink dot com"
+      /></a>
+      <nav class="navbar-mobile" onclick="showMenuMobile()">
+        <i class="fas fa-bars fa-2x"></i>
+        <ul class="menu-mobile disable">
+          <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar-desktop disable">
+        <ul>
+          <li><a href="#quem-sou-eu">Quem sou eu</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="intro">
+      <div class="banner">
+        <img src="./assets/intro.svg" alt="Foto" />
+      </div>
+      <div class="text-block">
+        <h1 class="text">MAYRINK DOT COM</h1>
+        <h3 class="text"><i>The best experience with the digital world</i></h3>
+        <h3 class="text">Transformando ideias em soluções digitais</h3>
+        <h3 class="text">Desenvolvedor de software | Social media</h3>
+      </div>
+    </section>
+    <section id="quem-sou-eu">
+      <h1 class="section-title">Quem sou eu</h1>
+      <div class="section-content">
+        <img class="me-img" src="./assets/me.png" alt="placeholder" />
+        <p class="about-me">
+          Graduando em Engenharia de Software pela PUC Minas. Técnico em
+          Eletrônica pelo CEFET-MG. Imerso nas áreas ligadas ao desenvolvimento
+          de software, Data Science e aplicações de inteligência artificial.
+          Experiência no campo de Internet of Things (IoT), programação de
+          microcontroladores e desenvolvimento de equipamentos biomédicos.
+          Participação em eventos de inovação tecnológica como expositor de
+          projetos. Entusiasta no ramo científico de TI, sempre em busca de
+          desenvolvimento pessoal e colaborativo.
+        </p>
+      </div>
+    </section>
+    <section id="skills">
+      <h1 class="section-title">Habilidades</h1>
+      <div class="section-content">
+        <div class="skill-item">
+          <img
+            src="https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67"
+            alt="Python"
+          />
+          <h4>Python</h4>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://appmasters.io/static/react-47ce6e77f039020ee2e76a10c1e988e9.png"
+            alt="React"
+          />
+          <h4>React</h4>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+            alt="HTML5"
+          />
+          <h4>HTML5</h4>
+        </div>
+        <div class="skill-item">
+          <img src="https://www.kanix.com.br/images/css3.svg" alt="CSS3" />
+          <h4>CSS3</h4>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+            alt="JavaScript"
+          />
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png"
+            alt="BootStrap"
+          />
+          <h4>BootStrap</h4>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h1 class="section-title">Portfólio</h1>
+      <div class="section-content">
+        <div id="modal-container" class="modal-container">
+          <div class="modal">
+            <h3 class="modal-title">Título da modal aqui</h3>
+            <div class="modal-content">
+              <div class="modal-image">
+                <img
+                  src="https://source.unsplash.com/random/200x200?q=a"
+                  alt=""
+                />
+              </div>
+              <div class="modal-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                  iusto sint aliquid voluptas rem fuga magnam saepe perspiciatis
+                  voluptate quis debitis alias quia error, ea dolor magni non
+                  sequi numquam rerum tenetur obcaecati quibusdam? Dolorum
+                  nesciunt deleniti, deserunt omnis nobis commodi dolorem, amet
+                  vel, facilis laudantium odit laboriosam facere explicabo!
+                </p>
+                <div class="card-tags">
+                  <p class="tag">Skill 1</p>
+                  <p class="tag">Skill 2</p>
+                  <p class="tag">Skill 3</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>Projetos desenvolvidos durante minha formação</p>
+        <div class="portfolio-content">
+          <div class="portfolio-card">
+            <img
+              src="https://source.unsplash.com/random/200x200?q=a"
+              alt="placeholder"
+            />
+            <p class="line-clamp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              placeat aspernatur id delectus, velit eveniet fuga? Dolores, ipsa.
+              Incidunt, consequuntur!
+            </p>
+            <div class="card-tags">
+              <p class="tag">Skill 1</p>
+              <p class="tag">Skill 2</p>
+              <p class="tag">Skill 3</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://source.unsplash.com/random/200x200?q=b"
+              alt="placeholder"
+            />
+            <p class="line-clamp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              placeat aspernatur id delectus, velit eveniet fuga? Dolores, ipsa.
+              Incidunt, consequuntur!
+            </p>
+            <div class="card-tags">
+              <p class="tag">Skill 1</p>
+              <p class="tag">Skill 2</p>
+              <p class="tag">Skill 3</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://source.unsplash.com/random/200x200?q=c"
+              alt="placeholder"
+            />
+            <p class="line-clamp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              placeat aspernatur id delectus, velit eveniet fuga? Dolores, ipsa.
+              Incidunt, consequuntur!
+            </p>
+            <div class="card-tags">
+              <p class="tag">Skill 1</p>
+              <p class="tag">Skill 2</p>
+              <p class="tag">Skill 3</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://source.unsplash.com/random/200x200?q=d"
+              alt="placeholder"
+            />
+            <p class="line-clamp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              placeat aspernatur id delectus, velit eveniet fuga? Dolores, ipsa.
+              Incidunt, consequuntur!
+            </p>
+            <div class="card-tags">
+              <p class="tag">Skill 1</p>
+              <p class="tag">Skill 2</p>
+              <p class="tag">Skill 3</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://source.unsplash.com/random/200x200?q=e"
+              alt="placeholder"
+            />
+            <p class="line-clamp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              placeat aspernatur id delectus, velit eveniet fuga? Dolores, ipsa.
+              Incidunt, consequuntur!
+            </p>
+            <div class="card-tags">
+              <p class="tag">Skill 1</p>
+              <p class="tag">Skill 2</p>
+              <p class="tag">Skill 3</p>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="https://source.unsplash.com/random/200x200?q=f"
+              alt="placeholder"
+            />
+            <p class="line-clamp">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              placeat aspernatur id delectus, velit eveniet fuga? Dolores, ipsa.
+              Incidunt, consequuntur!
+            </p>
+            <div class="card-tags">
+              <p class="tag">Skill 1</p>
+              <p class="tag">Skill 2</p>
+              <p class="tag">Skill 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contatos">
+      <h1 class="section-title">Contatos</h1>
+      <div class="section-content">
+        <p>Me acompanhe em minhas redes sociais!</p>
+        <ul class="contacts-list">
+          <li>
+            <span class="insta-icon">
+              <a href="https://instagram.com/mayrinkdotcom/" target="_blank"
+                ><i class="fab fa-instagram fa-3x"></i
+              ></a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <a
+                href="https://www.linkedin.com/in/joao-pedro-mayrink-de-jesus/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in fa-3x"></i
+              ></a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <a href="https://www.github.com/mayrinkdotcom/" target="_blank"
+                ><i class="fab fa-github fa-3x"></i
+              ></a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <a href="mailto:joaopmayrinkj@gmail.com" target="_blank"
+                ><i class="fas fa-envelope fa-3x"></i
+              ></a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p>Mayrink dot com © 2021 | Todos os direitos reservados</p>
+    </footer>
 
-<body>
-  <header>
-    <a href="#intro"><img class="logo" src="./assets/logo.png" alt="Logo Mayrink dot com" /></a>
-    <nav class="navbar-mobile" onclick="showMenuMobile()">
-      <i class="fas fa-bars fa-2x"></i>
-      <ul class="menu-mobile disable">
-        <li><a href="#quem-sou-eu">Quem sou eu</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
-    <nav class="navbar-desktop disable">
-      <ul>
-        <li><a href="#quem-sou-eu">Quem sou eu</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="intro">
-    <div class="banner">
-      <img src="./assets/intro.svg" alt="Foto" />
-    </div>
-    <div class="text-block">
-      <h1 class="text">MAYRINK DOT COM</h1>
-      <h3 class="text"><i>The best experience with the digital world</i></h3>
-      <h3 class="text">Transformando ideias em soluções digitais</h3>
-      <h3 class="text">Desenvolvedor de software | Social media</h3>
-    </div>
-  </section>
-  <section id="quem-sou-eu">
-    <h1 class="section-title">Quem sou eu</h1>
-    <div class="section-content">
-      <img class="me-img" src="./assets/me.png" alt="placeholder" />
-      <p class="about-me">
-        Graduando em Engenharia de Software pela PUC Minas. Técnico em
-        Eletrônica pelo CEFET-MG. Imerso nas áreas ligadas ao desenvolvimento
-        de software, Data Science e aplicações de inteligência artificial.
-        Experiência no campo de Internet of Things (IoT), programação de
-        microcontroladores e desenvolvimento de equipamentos biomédicos.
-        Participação em eventos de inovação tecnológica como expositor de
-        projetos. Entusiasta no ramo científico de TI, sempre em busca de
-        desenvolvimento pessoal e colaborativo.
-      </p>
-    </div>
-  </section>
-  <section id="skills">
-    <h1 class="section-title">Habilidades</h1>
-    <div class="section-content">
-      <div class="skill-item">
-        <img
-          src="https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67"
-          alt="Python">
-        <h4>Python</h4>
-      </div>
-      <div class="skill-item">
-        <img src="https://appmasters.io/static/react-47ce6e77f039020ee2e76a10c1e988e9.png" alt="React">
-        <h4>React</h4>
-      </div>
-      <div class="skill-item">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
-          alt="HTML5">
-        <h4>HTML5</h4>
-      </div>
-      <div class="skill-item">
-        <img src="https://www.kanix.com.br/images/css3.svg" alt="CSS3">
-        <h4>CSS3</h4>
-      </div>
-      <div class="skill-item">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
-          alt="JavaScript">
-        <h4>JavaScript</h4>
-      </div>
-      <div class="skill-item">
-        <img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="BootStrap">
-        <h4>BootStrap</h4>
-      </div>
-    </div>
-  </section>
-  <section id="portfolio">
-    <h1 class="section-title">Portfólio</h1>
-    <div class="section-content">
-      <p>Projetos desenvolvidos durante minha formação</p>
-      <div class="portfolio-content">
-        <div class="portfolio-card">
-          <img src="https://source.unsplash.com/random/200x200?q=a" alt="placeholder" />
-          <p class="line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat aspernatur id
-            delectus, velit
-            eveniet fuga? Dolores, ipsa. Incidunt, consequuntur!</p>
-          <div class="card-tags">
-            <p class="tag">Skill 1</p>
-            <p class="tag">Skill 2</p>
-            <p class="tag">Skill 3</p>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <img src="https://source.unsplash.com/random/200x200?q=b" alt="placeholder" />
-          <p class="line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat aspernatur id
-            delectus, velit
-            eveniet fuga? Dolores, ipsa. Incidunt, consequuntur!</p>
-          <div class="card-tags">
-            <p class="tag">Skill 1</p>
-            <p class="tag">Skill 2</p>
-            <p class="tag">Skill 3</p>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <img src="https://source.unsplash.com/random/200x200?q=c" alt="placeholder" />
-          <p class="line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat aspernatur id
-            delectus, velit
-            eveniet fuga? Dolores, ipsa. Incidunt, consequuntur!</p>
-          <div class="card-tags">
-            <p class="tag">Skill 1</p>
-            <p class="tag">Skill 2</p>
-            <p class="tag">Skill 3</p>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <img src="https://source.unsplash.com/random/200x200?q=d" alt="placeholder" />
-          <p class="line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat aspernatur id
-            delectus, velit
-            eveniet fuga? Dolores, ipsa. Incidunt, consequuntur!</p>
-          <div class="card-tags">
-            <p class="tag">Skill 1</p>
-            <p class="tag">Skill 2</p>
-            <p class="tag">Skill 3</p>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <img src="https://source.unsplash.com/random/200x200?q=e" alt="placeholder" />
-          <p class="line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat aspernatur id
-            delectus, velit
-            eveniet fuga? Dolores, ipsa. Incidunt, consequuntur!</p>
-          <div class="card-tags">
-            <p class="tag">Skill 1</p>
-            <p class="tag">Skill 2</p>
-            <p class="tag">Skill 3</p>
-          </div>
-        </div>
-        <div class="portfolio-card">
-          <img src="https://source.unsplash.com/random/200x200?q=f" alt="placeholder" />
-          <p class="line-clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi placeat aspernatur id
-            delectus, velit
-            eveniet fuga? Dolores, ipsa. Incidunt, consequuntur!</p>
-          <div class="card-tags">
-            <p class="tag">Skill 1</p>
-            <p class="tag">Skill 2</p>
-            <p class="tag">Skill 3</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contatos">
-    <h1 class="section-title">Contatos</h1>
-    <div class="section-content">
-      <p>Me acompanhe em minhas redes sociais!</p>
-      <ul class="contacts-list">
-        <li>
-          <span class="insta-icon">
-            <a href="https://instagram.com/mayrinkdotcom/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-          </span>
-        </li>
-        <li>
-          <span>
-            <a href="https://www.linkedin.com/in/joao-pedro-mayrink-de-jesus/" target="_blank"><i
-                class="fab fa-linkedin-in fa-3x"></i></a>
-          </span>
-        </li>
-        <li>
-          <span>
-            <a href="https://www.github.com/mayrinkdotcom/" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-          </span>
-        </li>
-        <li>
-          <span>
-            <a href="mailto:joaopmayrinkj@gmail.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
-          </span>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <footer>
-    <p>Mayrink dot com © 2021 | Todos os direitos reservados</p>
-  </footer>
-
-  <script src="https://kit.fontawesome.com/64f8fb50f9.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./app.js"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/64f8fb50f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
 </html>

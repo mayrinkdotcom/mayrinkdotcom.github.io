@@ -203,6 +203,63 @@ section .section-content {
     width: 60px;
 }
 
+#modal-container {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+#modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#modal-container .modal {
+    max-width: 100%;
+    margin: 0 10vw;
+    border-radius: 10px;
+}
+
+#modal-container .modal .modal-title {
+    color: gainsboro;
+    background-color: var(--secondaryColor);
+    
+    padding: 10px 20px;
+}
+
+#modal-container .modal .modal-content {
+    color: var(--secondaryColor);
+    background-color: var(--primaryColor);
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-container .modal .modal-content .modal-image {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#modal-container .modal .modal-content .modal-text {
+    color: gainsboro;
+    background-color: var(--secondaryColor);
+    padding: 10px 20px;
+    text-align: justify;
+}
+
 #portfolio .portfolio-content {
     width: 100%;
     margin: 10px auto;
@@ -226,6 +283,7 @@ section .section-content {
 
     transform: scale(0.9);
     opacity: 70%;
+    cursor: pointer;
     transition: all 200ms ease;
 }
 

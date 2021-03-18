@@ -23,4 +23,22 @@ $(document).ready( () => {
             scrollTop: targetTopOffset - menuHeight
         }, 500);
     })
+
+    const modal_container = document.getElementById('modal-container');
+    const portfolio_cards = document.querySelectorAll('.portfolio-card');
+    console.log(portfolio_cards);
+
+    portfolio_cards.forEach(element => {
+        element.addEventListener('click', () => {
+            console.log(modal_container.classList);
+            modal_container.classList.add('show');
+            console.log(modal_container.classList);
+        })
+    });
+
+    modal_container.addEventListener('click', () => {
+        console.log(modal_container.classList);
+        modal_container.classList.remove('show');
+        console.log(modal_container.classList);
+    })
 } )
