@@ -253,6 +253,7 @@ section .section-content {
 
 #modal-container .modal .modal-content .modal-image {
     padding: 10px 20px;
+    max-width: 70%;
     text-align: center;
 }
 
@@ -290,7 +291,7 @@ section .section-content {
     text-align: center;
 
     transform: scale(0.9);
-    opacity: 70%;
+    opacity: 80%;
     cursor: pointer;
     transition: all 200ms ease;
 }
