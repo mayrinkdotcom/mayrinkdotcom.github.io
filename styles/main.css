@@ -331,6 +331,19 @@ section .section-content {
     margin: 10px 5px 0;
 }
 
+#portfolio .mais-repos {
+    text-align: right;
+}
+
+#portfolio .mais-repos #mais-repos {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    color: var(--primaryColor);
+    background-color: var(--highlightColor);
+    cursor: pointer;
+}
+
 #contatos .contacts-list {
     padding: 10px;
     color: var(--highlightColor);
