@@ -77,6 +77,11 @@
         max-width: 30vw;
         margin-right: 20px;
     }
+    #skills .section-content .skill-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     
     #skills .section-content img {
         width: 80px;
