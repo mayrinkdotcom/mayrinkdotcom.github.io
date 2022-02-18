@@ -1,19 +1,12 @@
-const PINNED_REPOS_ENDPOINT_BASE =
-  "https://gh-pinned-repos.egoist.sh";
+const PINNED_REPOS_ENDPOINT_BASE = "https://gh-pinned-repos.egoist.sh";
 const ALL_REPOS_ENDPOINT_BASE = "https://api.github.com/users/";
 const MAX_PINNED_REPOS = 6;
 let maxRepos = 6;
 
-function showMenuMobile() {
-  var elementClasses = document.querySelector(".menu-mobile").classList;
+function toggleVisibility() {
+  const element = document.querySelector(".menu-mobile");
 
-  if (elementClasses.contains("disable")) {
-    elementClasses.add("enable");
-    elementClasses.remove("disable");
-  } else {
-    elementClasses.add("disable");
-    elementClasses.remove("enable");
-  }
+  element.classList.toggle("hidden");
   return;
 }
 

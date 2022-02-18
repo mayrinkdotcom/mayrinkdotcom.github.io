@@ -83,14 +83,6 @@ header .menu-mobile a:visited {
     color: var(--primaryColor);
 }
 
-header .menu-mobile.disable {
-    display: none;
-}
-
-header .menu-mobile.enable {
-    display: block;
-}
-
 section .section-title {
     margin: 10px 0;
     text-align: center;
@@ -374,4 +366,8 @@ footer {
     padding: 20px;
     color: var(--primaryColor);
     background-color: var(--secondaryColor);
+}
+
+.hidden {
+    display: none;
 }
