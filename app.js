@@ -1,5 +1,5 @@
 const PINNED_REPOS_ENDPOINT_BASE =
-  "https://gh-pinned-repos-5l2i19um3.vercel.app/";
+  "https://gh-pinned-repos.egoist.sh";
 const ALL_REPOS_ENDPOINT_BASE = "https://api.github.com/users/";
 const MAX_PINNED_REPOS = 6;
 let maxRepos = 6;
@@ -32,21 +32,18 @@ function getPinnedRepos(qtdRepos) {
   requisicaoAjaxAPI(PINNED_REPOS_ENDPOINT_BASE, "?username=mayrinkdotcom")
     // Receber o JSON
     .done(function (data) {
-      // console.log(data)
       let codigo_html = "";
-      parsedData = JSON.parse(data);
 
       // Montar os cards
       for (i = 0; i < qtdRepos; i++) {
         // concatenar o código do card com os dados do JSON
-        // console.log(parsedData[i])
-        if (parsedData[i] == undefined) {
+        if (data[i] == undefined) {
           continue;
         }
-        titulo = parsedData[i].repo;
-        descricao = parsedData[i].description;
-        link = parsedData[i].link;
-        lang = parsedData[i].language;
+        titulo = data[i].repo;
+        descricao = data[i].description;
+        link = data[i].link;
+        lang = data[i].language;
 
         codigo_html += `<div id="portfolio-card-pinned${i}" class="portfolio-card">
                 <a href="${link}" target="_blank"><h3>${titulo}</h3>
@@ -61,7 +58,7 @@ function getPinnedRepos(qtdRepos) {
       $(".pinned-repos").html(codigo_html);
     })
     .fail(function (jqXHR, textStatus, msg) {
-      alert(msg);
+      alert(`Error: ${jqXHR} ${textStatus} ${msg}`);
     });
 }
 
@@ -74,14 +71,12 @@ function getAllRepos(qtdRepos) {
   requisicaoAjaxAPI(ALL_REPOS_ENDPOINT_BASE, "mayrinkdotcom/repos")
     // Receber o JSON
     .done(function (data) {
-      console.log(data);
       let codigo_html = "";
-      // parsedData = JSON.parse(data);
+      // data = JSON.parse(data);
 
       // Montar os cards
       for (i = 0; i < qtdRepos; i++) {
         // concatenar o código do card com os dados do JSON
-        // console.log(parsedData[i])
         if (data[i] == undefined) {
           continue;
         }
@@ -121,7 +116,6 @@ $(document).ready(function () {
     var sectionId = $(this).attr("href"),
       targetTopOffset = $(sectionId).offset().top,
       menuHeight = $("header").innerHeight();
-    console.log(menuHeight);
 
     $("html, body").animate(
       {
