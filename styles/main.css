@@ -92,6 +92,14 @@ section .section-title {
     background-color: var(--primaryColor);
 }
 
+section .section-subtitle {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px;
+    color: var(--secondaryColor);
+}
+
 section .section-content {
     padding: 10px;
 }
