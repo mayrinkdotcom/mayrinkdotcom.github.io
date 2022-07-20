@@ -9,9 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Lato', sans-serif;
 }
 
@@ -351,22 +348,28 @@ section .section-content {
     justify-content: space-between;
 }
 
-#contatos .contacts-list li {
+#contatos .contacts-list__item {
+    color: var(--highlightColor);
     background-color: var(--primaryColor);
     padding: 10px;
     border-radius: 20px;
+
+    display: flex;
+    align-items: center;
     
     transform: scale(1);
     transition: all 200ms ease;
 }
 
-#contatos .contacts-list li:hover {
-    transform: scale(1.5);
-    color: var(--highlightColorHover);
+#contatos .contacts-list__item--label {
+    display: none;
+    font-weight: 600;
+    margin-left: 8px;
 }
 
-#contatos .contacts-list li a {
-    color: var(--highlightColor);
+#contatos .contacts-list__item:hover {
+    transform: scale(1.5);
+    color: var(--highlightColorHover);
 }
 
 footer {
