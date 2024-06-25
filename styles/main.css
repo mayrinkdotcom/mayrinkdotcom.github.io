@@ -109,7 +109,7 @@ section .section-content {
     flex-direction: column-reverse;
     justify-content: center;
 
-    background: url("../assets/bg-img.jpg") center center no-repeat fixed;
+    background: url("../assets/img/bg-img.jpg") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
